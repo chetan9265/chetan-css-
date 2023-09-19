@@ -1,0 +1,146 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.main
+{
+    height: 500px;
+    width: 80%;
+    background-color: aquamarine;
+    margin: auto;
+}
+.header
+{
+    height: 500px;
+    width: 50%;
+    background-color:rgb(255, 255, 255);
+    float: left;
+  
+}
+.content
+{
+    height: 500px;
+    width: 50%;
+    background-color: brown;
+    float: left;
+}
+.header-content
+{
+    height: 20px;
+    width: 10%;
+}
+
+h2
+{
+    width: 45%;
+    float: left;
+    margin-left: 20%;
+    margin-top: 13%;
+    font-size: 25px;
+    color:rgb(34, 32, 32);
+   font-family: Arial, Helvetica, sans-serif;
+}
+.icon
+{
+    height: 20px;
+    width:20% ;
+    float: left;
+    margin-top: 15%;
+    margin-left: 1%;
+}
+i
+{
+    border-radius: 50%;
+   color: grey;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid grey;
+}
+.form
+{
+    height: 300px;
+    width: 50%;
+margin-left:20% ;
+margin-top: 22%;
+font-weight: bold;
+color: rgb(39, 38, 38);
+
+}
+input
+{
+    
+    width: 120%;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    margin-top:3%;
+    margin-bottom: 5%;
+    background-color: rgb(241, 236, 236);
+}
+.form button
+{
+    width: 120%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 5%;
+    background: rgb(210,9,67);
+    background: linear-gradient(90deg, rgba(210,9,67,1) 31%, rgba(214,12,74,1) 64%, rgba(232,16,78,1) 94%);
+    color: white;
+
+    
+}
+.footer
+{
+    width: 150%;
+    height: 50px;
+    margin-top: 4%;
+    color: rgb(210,9,67);
+}
+.footer input
+{
+    width: 10%;
+    padding: 5px;
+}
+a
+{
+   padding-left: 70px;
+   text-decoration: none;
+   color: rgb(126, 125, 125);
+}
+.content{
+    background: rgb(210,9,67);
+    background: linear-gradient(90deg, rgba(210,9,67,1) 31%, rgba(214,12,74,1) 64%, rgba(232,16,78,1) 94%);
+     height: 500px;
+    width: 50%;
+}
+label
+{
+    color: rgb(39, 35, 35);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+.log
+{
+   text-align: center;
+   margin-top: 25%;
+  padding: 10px;
+  color: white;
+  
+}
+.log h1
+{
+    padding: 20px;
+}
+button
+{
+    border-radius: 20px;
+    background: rgb(210,9,67);
+    background: linear-gradient(90deg, rgba(210,9,67,1) 31%, rgba(214,12,74,1) 64%, rgba(232,16,78,1) 94%);
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
