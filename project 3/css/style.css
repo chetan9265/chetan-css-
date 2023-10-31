@@ -1,0 +1,157 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    font-family: POPPINS;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+    background-color: #f8f8f8;
+
+}
+
+.header {
+    width: 100%;
+}
+
+.nav-main {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    margin: auto;
+    margin-left: 10%;
+    padding: 0px 10px;
+    z-index: 1;
+}
+
+.nav-main .menu {
+
+    margin-top: 1.8%;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+.menu ul {
+    position: absolute;
+    margin-top: 5%;
+    background-color: white;
+    list-style: none;
+    right: 10%;
+    display: none;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: POPPINS;
+}
+ul li {
+    padding: 12px;
+}
+
+.menu :hover ul {
+    display: block;
+    padding: 10px 10px;
+}
+
+.menu i {
+    position: absolute;
+    right: 8%;
+}
+
+.text h5 {
+    display: inline;
+    padding-left: 5px;
+    font-size: 15px;
+    color: grey;
+    font-weight: 600;
+}
+
+span:hover {
+    color: #d5c455;
+    font-size: 15px;
+}
+
+span i:hover {
+    color: #d5c455;
+}
+
+.text i {
+
+    padding: 2px 2px 0px 3px;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.text {
+    text-align: center;
+    margin-top: 14%;
+    word-spacing: 1px;
+    align-items: center;
+    margin-left: 2%;
+    padding-bottom: 90px;
+}
+
+.text h1 {
+    padding-top: 10px;
+    color: #222222;
+    font-size: 39px;
+
+}
+.main
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+ 
+}
+.content1{
+    width: 35%;
+    position: relative;
+    height: 300PX;
+    margin: 1%;
+    
+}
+.content1 img{
+    width: 100%;
+    z-index: -1;
+    height: 300PX;
+     
+}
+.content1 .layer{
+  
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: #d5c455c4;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  height: 300PX;
+
+}
+.layer h3{
+    padding-top: 100px;
+    color: WHITE;
+   
+}
+.layer H4{
+    color: WHITE;
+    padding-top: 10PX;
+   
+}
+.content1:hover .layer{
+    opacity: 1;
+    transition: 0.3s;
+}
+p{
+    text-align: center;
+    color: grey;
+    padding-top: 130px;
+}
+.one{
+    color: #d5c455;
+}

@@ -1,0 +1,233 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+    background-color: #f8f8f8;
+
+}
+
+.header {
+    width: 100%;
+}
+
+.nav-main {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    margin: auto;
+    margin-left: 10%;
+    padding: 0px 10px;
+    z-index: 1;
+}
+
+.nav-main .menu {
+
+    margin-top: 1.8%;
+}
+
+.menu ul {
+    position: absolute;
+    margin-top: 5%;
+    background-color: white;
+    list-style: none;
+    right: 10%;
+    display: none;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: POPPINS;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+ul li {
+    padding: 12px;
+}
+
+.menu :hover ul {
+    display: block;
+    padding: 10px 10px;
+}
+
+.menu i {
+    position: absolute;
+    right: 8%;
+}
+
+.text h5 {
+    display: inline;
+    padding-left: 5px;
+    font-size: 15px;
+    color: grey;
+    font-weight: 600;
+}
+
+span:hover {
+    color: #d5c455;
+    font-size: 15px;
+}
+
+span i:hover {
+    color: #d5c455;
+}
+
+.text i {
+
+    padding: 2px 2px 0px 3px;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.text {
+    text-align: center;
+    margin-top: 14%;
+    word-spacing: 1px;
+    align-items: center;
+    margin-left: 2%;
+
+}
+
+.text h1 {
+    padding-top: 10px;
+    color: #222222;
+    font-size: 39px;
+    padding-bottom: 90px;
+
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-bottom: 170px;
+    
+}
+
+.main-content1 {
+    width: 50%;
+    padding-left: 50px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    height: 670px;
+
+}
+
+.content-text {
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    
+}
+.main-content1 p{
+    color: grey;
+    padding-bottom: 30px;
+}
+.content-text h2 {
+
+    width: 40%;
+    font-size: 16px;
+}
+
+.content-text h2 .one {
+    color: grey;
+    width: 90%;
+}
+
+.content-text .two {
+    padding-right: 20px;
+}
+
+.content-text p {
+    font-size: 16px;
+    width: 80%;
+    font-weight: 500;
+    color: #222222;
+
+}
+
+.content-text h3 {
+    padding-right: 60px;
+    font-size: 16px;
+
+}
+
+.content-text h3 p {
+    width: 130%;
+    color: #222222;
+}
+.content-text1{
+    position: relative;
+}
+input{
+    width: 90%;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 1%;
+    border-bottom: 1px solid grey;
+}
+input::placeholder{
+    padding: 20px 0px;
+}
+.textare{
+     height: 90px;   
+}
+.textare::placeholder{
+    position: absolute;
+    top: -22%;
+}
+.main-content1 button{
+    padding: 10PX 20PX;
+    background-color: #d5c455;
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-family: POPPINS;
+    margin-left: 6px;
+    margin-top: -1%;
+}
+.text-last p{
+    display: inline;
+    padding-right:10PX;
+
+     color: black;
+}
+.text-last{
+    padding-top: 10PX;
+}
+.text-last h3{
+padding-bottom: 7px;
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+.text-last a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+}
+.main-content2{
+    width: 50%;
+    margin-bottom: -0.6%;
+}
+
+p{
+    text-align: center;
+    color:grey;
+}
+.one{
+    color: #d5c455;
+}

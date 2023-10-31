@@ -1,0 +1,178 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+    background-color: #f8f8f8;
+
+}
+
+.header {
+    width: 100%;
+}
+
+.nav-main {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    margin: auto;
+    margin-left: 10%;
+    padding: 0px 10px;
+    z-index: 1;
+}
+
+.nav-main .menu {
+
+    margin-top: 1.8%;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+.menu ul {
+    position: absolute;
+    margin-top: 5%;
+    background-color: white;
+    list-style: none;
+    right: 10%;
+    display: none;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: POPPINS;
+}
+ul li {
+    padding: 12px;
+}
+
+.menu :hover ul {
+    display: block;
+    padding: 10px 10px;
+}
+
+.menu i {
+    position: absolute;
+    right: 8%;
+}
+
+.text h5 {
+    display: inline;
+    padding-left: 5px;
+    font-size: 15px;
+    color: grey;
+    font-weight: 600;
+}
+
+span:hover {
+    color: #d5c455;
+    font-size: 15px;
+}
+
+span i:hover {
+    color: #d5c455;
+}
+
+.text i {
+
+    padding: 2px 2px 0px 3px;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.text {
+    text-align: center;
+    margin-top: 14%;
+    word-spacing: 1px;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.text h1 {
+    padding-top: 10px;
+    color: #222222;
+    font-size: 39px;
+
+}
+.maincontent{
+    width: 48%;
+    height: 330px;
+    background-color:white;
+    padding-left: 30px;
+    position: relative;
+
+}
+.maincontent h3{
+    color: #d5c455;
+    font-weight: 500;
+    padding-top: 50px;
+}
+.maincontent h2{
+    font-size: 24px;
+    padding-bottom: 17px;
+    padding-top: 5px;
+    font-weight: 500;
+}
+.maincontent h4{
+    color: grey;
+    font-size: 13px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+.maincontent h4 i{
+    font-size: 11px;
+    color: #d5c455;
+    padding-right: 8px;
+}
+.maincontent p{
+    color: grey;
+    text-align: left;
+
+}
+.icon{
+    height: 60px;
+    width: 60px;
+    background-color: #d5c455;
+   position: absolute;
+   border-radius: 50%;
+top: -10%;
+   
+}
+.icon i{
+    font-size: 28px;
+    padding: 15px 18px;
+    color: white;
+}
+.main{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+}
+.main1{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+.main2{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+    margin-bottom: 15%;
+}
+p{
+    text-align: center;
+    color: grey;
+}
+.one{
+    color: #d5c455;
+}

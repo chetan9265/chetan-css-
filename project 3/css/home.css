@@ -1,0 +1,128 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+    background-color: #f8f8f8;
+    
+}
+
+.header {
+    width: 100%;
+}
+
+.nav-main {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    margin: auto;
+    margin-left: 10%;
+    padding: 0px 10px;
+    z-index: -2;
+}
+
+.nav-main .menu {
+
+    margin-top: 1.8%;
+}
+
+ul {
+    position: absolute;
+    margin-top: 5%;
+    background-color: white;
+    list-style: none;
+    right: 10%;
+    display: none;
+    font-weight:500;
+    font-size: 13px;
+    font-family:POPPINS;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+ul li {
+    padding: 12px;
+}
+
+.menu :hover ul {
+    display: block;
+    padding: 10px 10px;
+}
+
+.menu i {
+    position: absolute;
+    right: 8%;
+}
+.content{
+    display: flex;
+    z-index:1;
+    overflow: hidden;
+}
+.content-img{
+    width: 50%;
+    background-color:#d5c455;
+    position: absolute;
+    right: 0%;
+    top: -1%;
+    overflow: hidden;
+    z-index: -1;
+}
+.content-img img{
+    width: 80%;
+}
+.main-content{
+    
+    
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.main-content h5{
+    font-size: 16px;
+    color: #d5c455;
+    font-weight: 700;
+}
+.main-content h1{
+    font-size: 80px;
+    font-weight: 700;
+    color: #222222;
+}
+.btn1{
+    padding: 15px 10px 15px 10px;
+    font-weight: 700;
+    font-family: poppins;
+    color: white;
+    background-color: #d5c455;
+    border: none;
+    box-shadow:  0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+}
+.btn1 i{
+    padding-left: 5px;
+}
+
+.btn2{
+    padding: 15px 10px 15px 10px;
+    font-weight: 700;
+    font-family: poppins;
+    color: white;
+    background-color: #fff;
+    border: none;
+    color: black;
+    margin-left: 2px;
+   box-shadow:  0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+}
+.btn2 i{
+    padding-left: 5px;
+}
+.main-content p{
+    font-size: 12px;
+    padding-top: 100px;
+    color: grey;
+}
