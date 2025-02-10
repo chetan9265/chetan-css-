@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"/>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://baskinrobbinsindia.com/cdn/shop/files/SCOOPS_d9897fbb-eccc-4995-af2f-a41db70e9c65_414x.png?v=1698414156"
+              class="card-img-top"
+              alt=""
+              w-100
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cup Cake</h5>
+              <p class="card-text">$100</p>
+              <a href="#" class="btn btn-primary">Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://baskinrobbinsindia.com/cdn/shop/files/BEVERAGE_95b0dcd1-b12e-4947-87ae-d17feaf2889b_414x.png?v=1698414157"
+              class="card-img-top"
+              alt=""
+              w-100
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cup Cake</h5>
+              <p class="card-text">$200</p>
+              <a href="#" class="btn btn-primary">Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://baskinrobbinsindia.com/cdn/shop/files/JelloMello_414x.png?v=1697805620"
+              alt=""
+              w-100
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cup Cake</h5>
+              <p class="card-text">$150</p>
+              <a href="#" class="btn btn-primary">Add</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <div class="row">
+        <table class="table">
+          <thead>
+            <tr>
+              <td></td>
+              <td>Items</td>
+              <td>Item Name</td>
+              <td>Price</td>
+              <td></td>
+              <td>Quantity</td>
+              <td>Total</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>
+                <img
+                  src="https://baskinrobbinsindia.com/cdn/shop/files/SCOOPS_d9897fbb-eccc-4995-af2f-a41db70e9c65_414x.png?v=1698414156"
+                  alt=""
+                  height="40px"
+                  width="40px"
+                />
+              </td>
+              <td>Cup cake</td>
+              <td class="itemprice">$100</td>
+              <td></td>
+              <td><input type="number" class="qty1" value="1"></td>
+              <td class="totalprice">$100</td>
+              <td><a href="" class="btn btn-danger">Remove</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script>
+      let addtocart = document.getElementsByClassName("btn-primary");
+      let container = document.getElementsByTagName("tbody")[0];
+      let removebtn = document.getElementsByClassName("btn-danger");
+      let qty = document.getElementsByClassName("qty1");
+
+      for (let i = 0; i < addtocart.length; i++) {
+        addtocart[i].addEventListener("click", addto);
+      }
+      function addto(event) {
+        let itemcontainer = document.createElement("tr");
+        let btn = event.target;
+        let btnGrandParent = btn.parentElement.parentElement;
+        let btnparent = btn.parentElement;
+        let itemimage = btnGrandParent.children[0].src;
+        let itemPrice = btnparent.children[1].innerText;
+        let itemname = btnparent.children[0].innerText;
+
+        itemcontainer.innerHTML = `
+        <td><input type="checkbox"></td>
+        <td><img src="${itemimage}" alt="" height="40px" width="40px"></td>
+        <td>${itemname}</td>            
+        <td class="itemprice">${itemPrice}</td>
+        <td></td>
+        <td><input type="number" class="qty1" value="1"></td>
+        <td class="totalprice">$100</td>
+        <td><a href="" class="btn btn-danger">Remove</a></td>`;
+        container.append(itemcontainer);
+      }
+      for (let i = 0; i <qty.length; i++) {
+        qty[i].addEventListener("change", qtychange);
+      }
+     function qtychange(event){
+         let qty=event.target;
+         let qtyparent=qty.parentElement.parentElement;
+         let itemprice=qtyparent.getElementsByClassName("itemprice")[0];
+         let totalprice=qtyparent.getElementsByClassName("totalprice")[0];
+           itemprice=itemprice.innerText.replace('$',' ');
+           itemprice.children[0].innerText='$'+ qty.value * itemprice;
+      }
+    </script>
+  </body>
+</html>
